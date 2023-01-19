@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var kucing = {
+            nama : "acung" ,
+            warna : "putih" ,
+            jumlah_kaki : 4,
+            mata : {
+                warna_mata : "abu abu",
+                warna_pupil : "hitam"
+            },
+            dipanggil : function (){
+                return "nurut"
+            },
+            makan : function (){
+                return "makan royal canin"
+            },
+            tidur : function (){
+                return "di meja"
+            },
+        }
+        document.write(`ini namanya =  ${kucing.nama}<br />`);
+        document.write(`ini warnanya =  ${kucing.warna}<br />`);
+        document.write(`warna matanya =  ${kucing.mata.warna_mata}<br />`);
+        document.write(`warna pupil matanya =  ${kucing.mata.warna_pupil}<br />`);
+        document.write(`jumlah kakinya = ` + kucing.jumlah_kaki);
+        document.write(`dipanggil = ` + kucing.dipanggil() + "<br />");
+        document.write(`makanannya = ` + kucing.makan() + "<br />");
+        document.write(`tidurnya = ` + kucing.tidur() + "<br />");
+    </script>
+</body>
+</html>
